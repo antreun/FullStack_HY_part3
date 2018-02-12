@@ -1,0 +1,29 @@
+{
+  "name": "fullstack_hy_part3",
+  "version": "1.0.0",
+  "description": "Osa 3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node_modules/.bin/nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antreun/FullStack_HY_part3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12",
+    "morgan": "^1.9.0"
+
+  },
+  "bugs": {
+    "url": "https://github.com/antreun/FullStack_HY_part3/issues"
+  },
+  "homepage": "https://github.com/antreun/FullStack_HY_part3#readme"
+}
