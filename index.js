@@ -4,17 +4,12 @@ const bodyParser = require('body-parser')
 const morgan = require('morgan')
 
 app.use(bodyParser.json())
-app.use(assignData)
 app.use(morgan(':method :url :postData :status :res[content-length] - :response-time ms'))
 
 morgan.token('postData', function getPostId (req) {
   return JSON.stringify(req.body);
 })
 
-function assignData (req, res, next) {
-  req.postData = Math.random();
-  next()
-}
 
 let persons = [
   {
